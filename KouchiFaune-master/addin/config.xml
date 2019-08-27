@@ -1,0 +1,21 @@
+<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Name>Python Addin</Name><AddInID>{36604db4-95af-4c17-a027-8ed36bfb8bfa}</AddInID><Description>Extraction des traits de cote</Description><Version>0.1</Version><Image>Images\Logo.PNG</Image><Author>KouchiFaune group</Author><Company>KouchiFaune</Company><Date>08/18/2019</Date><Targets><Target name="Desktop" version="10.1" /></Targets><AddIn language="PYTHON" library="addin_addin.py" namespace="addin_addin"><ArcMap>
+    <Commands>
+        <Button caption="Environnement de travail" category="Python Addin" class="ButtonClass1" id="addin_addin.button_1" image="Images\folder.png" message="" tip="Choix d'un r&#233;pertoire de travail et d'une couche matricielle"><Help heading="" /></Button>
+        <Tool caption="Cr&#233;ation du masque" category="Python Addin" class="ToolClass41" id="addin_addin.tool_1" image="Images\crop-symbol.png" message="" tip="Cr&#233;ation d'un masque pour &#233;liminer la r&#233;gion aquatique"><Help heading="" /></Tool>
+        <Tool caption="Execution de l'extraction par masque" category="Python Addin" class="ToolClass43" id="addin_addin.tool_2" image="Images\gear.png" message="" tip="Execution du &quot;Extract by Mask&quot; avec le masque cr&#233;&#233; pr&#233;c&#233;demment"><Help heading="" /></Tool>
+        <ToolPalette canTearOff="false" category="Python Addin" columns="2" id="addin_addin.toolpalette" isMenuStyle="false"><Items><Tool refID="addin_addin.tool_1" /><Tool refID="addin_addin.tool_2" /></Items></ToolPalette>
+        <ComboBox caption="Classes" category="Python Addin" class="ComboBoxClass1" id="addin_addin.combobox" itemSizeString="WWWWWW" message="" rows="4" sizeString="WWWWWW" tip="Selectionner la classe pour laquelle vous voulez cr&#233;er des sites d'entrainement"><Help heading="" /></ComboBox>
+        <Tool caption="Site" category="Python Addin" class="ToolClass48" id="addin_addin.tool" image="Images\dotted-square.png" message="" tip="Cr&#233;ation des sites d'entrainement pour la classe s&#233;lectionn&#233;e"><Help heading="" /></Tool>
+        <Button caption="Effectuer classification" category="Python Addin" class="ButtonClass4" id="addin_addin.button_4" image="Images\play-arrow.png" message="" tip="Lorsque l'ensemble des sites d'entrainement sont cr&#233;&#233;s, cliquer sur ce bouton pour effectuer la classification"><Help heading="" /></Button>
+        <Button caption="Nettoyage" category="Python Addin" class="ButtonClass5" id="addin_addin.button_5" image="Images\short-broom.png" message="" tip="Effectue un nettoyage de la couche matricielle"><Help heading="" /></Button>
+        <Button caption="Conversion" category="Python Addin" class="ButtonClass6" id="addin_addin.button_6" image="Images\icon.png" message="" tip="Effectuer la conversion vers le format vectoriel de la couche matricielle"><Help heading="" /></Button>
+        <Button caption="Extraction et s&#233;lection" category="Python Addin" class="ButtonClass7" id="addin_addin.button_7" image="Images\tree-silhouette.png" message="" tip="Effectuer l'extraction des segments correspondant au trait de cote et classement de ceux-ci en fonction de leur importance"><Help heading="" /></Button>
+        </Commands>
+    <Extensions>
+        </Extensions>
+    <Toolbars>
+        <Toolbar caption="Extraction des traits de cote" category="Python Addin" id="tdc.toolbar" showInitially="true"><Items><Button refID="addin_addin.button_1" /><ToolPalette refID="addin_addin.toolpalette" /><ComboBox refID="addin_addin.combobox" /><Tool refID="addin_addin.tool" /><Button refID="addin_addin.button_4" /><Button refID="addin_addin.button_5" /><Button refID="addin_addin.button_6" /><Button refID="addin_addin.button_7" /></Items></Toolbar>
+        </Toolbars>
+    <Menus>
+        </Menus>
+    </ArcMap></AddIn></ESRI.Configuration>
