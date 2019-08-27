@@ -1,0 +1,15 @@
+	intersection_type			|Force d'indicateur
+-------------------------------------------------------------------
+1 & 2: végétation saine - végétation flétrie	|	faible
+1 & 3: végétation saine - sable sec		|	moyen
+1 & 4: végétation saine - sable humide		|	moyen
+1 & 5: végétation saine - laisse de mer		|	fort
+						|
+2 & 3: végétation flétrie - sable sec		|	moyen
+2 & 4: végétation flétrie - sable humide	|	moyen
+2 & 5: végétation flétrie - laisse de mer	|	fort
+						|
+3 & 4: sable sec - sable humide			|	faible
+3 & 5: sable sec - laisse de mer		|	moyen
+						|
+4 & 5: sable humide - laisse de mer		|	moyen
